@@ -1,9 +1,10 @@
 from flask import Flask,request,redirect,render_template
+from flask_bootstrap import Bootstrap
 
 from flask_script import Manager
 
 app=Flask(__name__)
-manager = Manager(app)
+bootstrap = Bootstrap(app)
 
 
 
@@ -19,6 +20,6 @@ def user(name):
 
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #app.run(debug=True)
-    manager.run()
+ #   bootstrap.run()
